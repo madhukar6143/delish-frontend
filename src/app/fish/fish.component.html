@@ -1,0 +1,47 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 m-3">
+    <div class="col" *ngFor="let data of mydata;let ind=index">
+        <div class="card shadow mb-3 bg-dark text-white">
+            <img [src]="data.imgPath" class="w-100">
+            <div class="m-3">
+                <h4 class="h4">{{data.name}}</h4>
+                <div class="d-flex justify-content-between align-items-center m-3">
+                <button class="btn x" [attr.data-bs-target]="'#x'+ind" data-bs-toggle="modal">View</button>
+                
+
+                <div class="col-6" *ngIf="similarDataCount[ind]==0 ">
+                    <button class="btn y float-end" (click)="addToCart(data,ind)"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+                    </div>
+    
+                    <div class="btn-group" *ngIf="similarDataCount[ind]==1">    
+                        <button  class="btn btn-success" (click)="goToCart()">Go to cart</button>
+                        <button   (click)="removeFromCart(data,ind)" class="btn rem"><i class="far fa-trash-alt"></i></button>
+                    </div>
+    
+           </div>
+           <div class="modal fade" [attr.id]="'x'+ind" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="text-muted">About</h4>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body bg-light">
+                       <div class="row">
+                           <div class="col-sm-6">
+                               <img [src]="data.imgPath" width="100%">
+                           </div>
+                           <div class="col-sm-6">
+                               <ul class="list-unstyled pt-4 h5">
+                                   <li class="h3 pb-3 z">{{data.name}}</li>
+                                   <li class="h4 pb-3">{{data.description}}</li>
+                                   <li class="h2 pb-3 z">₹{{data.price}}</li>
+                               </ul>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
+

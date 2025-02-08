@@ -1,0 +1,41 @@
+h5,h3,h4,h2{
+    font-family:'Roboto';
+}
+h6{
+    font-family:'Roboto';
+    letter-spacing: 0.05ch;
+}
+.card{
+    border:none;
+    background-color: #cda45e !important;
+    color:#621622 !important;
+}
+button{
+    font-weight:bold;
+}
+.card:hover{
+    box-shadow:0 4px 8px 1px #eb1f09 !important;
+    transition:0.7s;
+}
+.x{
+    background-color: #621622;
+    color:#cda45e;
+}
+.y{
+    color: #621622;
+    background-color:#D33943;
+}
+.pb-3{
+    color:#58B69B;
+}
+.z{
+    color:#285B52;
+}
+.rem{
+    color: #621622;
+    background-color: #d33943;
+}
+input{
+    border-radius:50px;
+    border-color:#58B69B;
+}

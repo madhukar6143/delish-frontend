@@ -1,0 +1,28 @@
+.nav-link{
+    color:#58B69B;
+    font-weight:bold;
+    font-family:sans-serif;
+}
+.nav-link.active{
+    background-color:#58B69B;
+    color:white;
+}
+h3{
+    color:#cda45e;
+    text-shadow: 2.8px 2.8px #D33943;
+    background-color:rgb(0,0,0,0.5);
+    font-family:'Kaushan script';
+    font-size:4em;
+}
+.bg{
+    background-image: url("https://media.istockphoto.com/vectors/beach-vector-id164547452?k=6&m=164547452&s=612x612&w=0&h=TnRNmIPz68i53UaS5GIqHdyjXI_TuyQzTGJ0E8uM6-E=");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+@media screen and (min-width:519px){
+    h3{
+        font-size:7em;
+    }
+}
+

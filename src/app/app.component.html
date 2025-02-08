@@ -1,0 +1,77 @@
+<div class="x">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fas fa-utensils mx-auto p-2 rounded-circle"></i>&nbsp;Delish</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="signup" routerLinkActive="active">Sign up</a>
+              </li>
+              <li class="nav-item" *ngIf="!us.userLoginStatus">
+                <a class="nav-link" routerLink="login" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Login</a>
+              </li>
+      
+              <li class="nav-item"  *ngIf="us.userLoginStatus">
+                <a class="nav-link" routerLink="login" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"  (click)=userLogout()>Logout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="contactus" routerLinkActive="active">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" data-bs-toggle="offcanvas" href="#menubody">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="addtocart" routerLinkActive="active">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="searchall" routerLinkActive="active"><i class="fas fa-search"></i></a>
+              </li>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="menubody" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><i class="fas fa-utensils mx-auto p-2 rounded-circle"></i>&nbsp;Delish</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body text-light">
+                  <ul class="list-unstyled">
+                    <li><a routerLink="starter" data-bs-dismiss="offcanvas">Starters</a></li>
+                      <ul class="list-unstyled p-1 child">
+                        <li>Soups</li>
+                        <li>Pizza</li>
+                        <li>Salads</li>
+                        <li>Grilled items</li>
+                      </ul>
+                    <li><a routerLink="seafood" data-bs-dismiss="offcanvas">Sea Food</a></li>
+                    <ul class="list-unstyled p-1 child">
+                      <li>Fish</li>
+                      <li>Prawns</li>
+                      <li>Crab</li>
+                    </ul>
+                    <li><a routerLink="maincourse" data-bs-dismiss="offcanvas">Main Course</a></li>
+                    <ul class="list-unstyled p-1 child">
+                      <li>Veg Curries</li>
+                      <li>Non-veg Curries</li>
+                      <li>Roti</li>
+                      <li>Biryani</li>
+                    </ul>
+                    <li><a routerLink="dessert" data-bs-dismiss="offcanvas">Dessert</a></li>
+                    <ul class="list-unstyled p-1 child">
+                      <li>Cake</li>
+                      <li>Ice-cream</li>
+                      <li>Drinks</li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <router-outlet></router-outlet>  
+      </div>
+<app-footer class="mt-auto"></app-footer>

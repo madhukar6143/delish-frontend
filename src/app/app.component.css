@@ -1,0 +1,65 @@
+.x{
+    overflow-x:hidden;
+}
+.fa-utensils{
+    font-size:19px;
+    background-color:lightgray;
+    color:grey;
+}
+.navbar{
+    background-color:#58B69B;
+}
+.navbar-brand{
+    color:#f2f3f8;
+    font-size:22px;
+    font-family:'Sansita',sans-serif;
+    letter-spacing: 0.15ch;
+}
+li a{
+    text-align:center;
+    font-family:'Roboto',sans-serif;
+    padding:4px;
+    position:relative;
+}
+ .nav-item a::before {
+    content: "";
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color:#285B52;
+  }
+   .nav-item a:hover::before {
+    right: 0;
+    left: 0;
+  }
+.active{
+    color:#cda45e;
+}
+.offcanvas{
+    background-color: #cda45e;
+}
+.offcanvas-title{
+    color:#D33943;
+    font-family:'Roboto';
+}
+.offcanvas-body a{
+    color:#D33943;
+    font-weight:bold;
+    margin-left:10px;
+    font-size: 22px;
+    font-family:'Prata';
+    text-decoration: none;
+    letter-spacing: 0.22ch;
+}
+.offcanvas-body a:hover{
+    text-decoration: underline;
+}
+.offcanvas-body .child{
+    color:#285B52;
+    margin-left:15px;
+    margin-bottom:5px;
+    letter-spacing: 0.1ch;
+}

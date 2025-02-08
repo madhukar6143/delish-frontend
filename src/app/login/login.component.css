@@ -1,0 +1,58 @@
+.input-group{
+    margin: 8px 15px; 
+    width: 90%;
+}
+.container-fluid{
+     background-image: url("https://www.wallpapertip.com/wmimgs/233-2337403_food-wallpaper-hd-1080p.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 500px;
+}
+i,.z{
+    color:#285B52;
+}
+.x{
+    background-color:#58B69B !important;
+    border-color:#58B69B;
+}
+.y{
+    color:#58B69B;
+}
+#p1{
+    opacity: 90%;
+}
+.btn{
+    font-size:20px;
+    font-family:'Roboto',sans-serif;
+}
+input:focus{
+    background-color:transparent;
+    border-color:#58B69B;
+    color: white;
+}
+input{
+    box-shadow:none !important;
+}
+input:active{
+    box-shadow: #58B69B;
+}
+::placeholder,.display-6{
+    font-family: 'Roboto', sans-serif;
+}
+.form-text{
+    margin-left: 50px !important;
+    margin-top: -5px !important;
+}
+
+@media screen and (max-width:500px){
+    #p1{
+        margin-right:5px;
+        margin-left:5px;
+    }
+    .btn{
+        padding-top:3px !important;
+        padding-bottom:3px !important;
+        padding-right:17px !important;
+        padding-left:17px !important;
+    }
+}

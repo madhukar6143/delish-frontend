@@ -1,0 +1,48 @@
+h1{
+    color:#d33943;
+    font-family: 'Kaushan Script', cursive;
+    font-size:2em;
+}
+.bg{
+    background-color:rgb(236, 233, 233);
+    overflow-x:hidden;
+}
+.fab{
+    transition:0.35s;
+    padding:5px;
+    color:#58B69B;
+}
+.fa-twitter:hover{
+    color:#55acee;
+
+}
+.fa-facebook-square:hover{
+    color:#3b5998;
+
+}
+.fa-instagram:hover{
+    color:purple;
+
+}
+.fa-google-plus-g:hover{
+    color:#dd4b39;
+
+}
+.fa-linkedin:hover{
+    color:#0082ca;
+
+}
+a{
+    text-decoration:none;
+    color:white;
+    font-size:2em;
+}
+.list-unstyled li{
+    color:#621622;
+    padding:4px;
+    font-family:'Prata',sans-serif;
+    font-weight:bold;
+}
+.copy{
+    color:#285B52;
+}
